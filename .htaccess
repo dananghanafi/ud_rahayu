@@ -1,0 +1,19 @@
+RewriteEngine On
+Options -Indexes
+
+# Mengizinkan akses ke file statis
+<FilesMatch "\.(css|js|png|jpg|jpeg|gif|ico)$">
+    Order Allow,Deny
+    Allow from all
+</FilesMatch>
+
+# Mengizinkan akses ke PHP files
+<FilesMatch "\.php$">
+    Order Allow,Deny
+    Allow from all
+</FilesMatch>
+
+# Mengarahkan semua request ke index.php jika file/folder tidak ditemukan
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php [L,QSA] 

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background circle -->
+    <circle cx="100" cy="100" r="90" fill="#4a2c2a"/>
+    
+    <!-- UD text -->
+    <text x="100" y="80" font-family="Arial" font-size="40" font-weight="bold" fill="white" text-anchor="middle">UD</text>
+    
+    <!-- Rahayu text -->
+    <text x="100" y="130" font-family="Arial" font-size="30" font-weight="bold" fill="white" text-anchor="middle">RAHAYU</text>
+</svg> 

@@ -1,0 +1,199 @@
+/* Custom styles for UD Rahayu */
+:root {
+    --primary-color: #4A2C2A;
+    --secondary-color: #8B4513;
+    --accent-color: #D2691E;
+    --light-color: #FFF8DC;
+    --bg-color: #f4f6f9;
+}
+
+body.user-dashboard {
+    font-family: 'Poppins', sans-serif !important;
+    background-color: var(--bg-color) !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Navbar Styling */
+body.user-dashboard .navbar {
+    background-color: var(--primary-color) !important;
+    padding: 1rem 0 !important;
+    margin: 0 !important;
+    margin-bottom: 2rem !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1) !important;
+}
+
+body.user-dashboard .navbar .container {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+}
+
+body.user-dashboard .navbar-brand {
+    color: white !important;
+    font-size: 1.5rem !important;
+    font-weight: 700 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Dashboard Container */
+body.user-dashboard .dashboard-container {
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    padding: 0 1rem !important;
+}
+
+/* Dashboard Card */
+body.user-dashboard .dashboard-card {
+    background: white !important;
+    border-radius: 10px !important;
+    padding: 1.5rem !important;
+    margin-bottom: 2rem !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1) !important;
+}
+
+body.user-dashboard .dashboard-title {
+    color: var(--primary-color) !important;
+    font-size: 1.75rem !important;
+    margin-bottom: 0.5rem !important;
+    font-weight: 600 !important;
+}
+
+body.user-dashboard .dashboard-subtitle {
+    color: #666 !important;
+    margin-bottom: 0 !important;
+    font-size: 0.9rem !important;
+}
+
+/* Menu Grid */
+body.user-dashboard .menu-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 1.5rem !important;
+}
+
+body.user-dashboard .menu-item {
+    background: white !important;
+    border-radius: 10px !important;
+    padding: 1.5rem !important;
+    text-align: center !important;
+    text-decoration: none !important;
+    color: var(--primary-color) !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1) !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+}
+
+body.user-dashboard .menu-item:hover {
+    transform: translateY(-5px) !important;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2) !important;
+    color: var(--primary-color) !important;
+    text-decoration: none !important;
+}
+
+body.user-dashboard .menu-icon {
+    font-size: 2rem !important;
+    color: var(--primary-color) !important;
+    margin-bottom: 1rem !important;
+}
+
+body.user-dashboard .menu-icon i {
+    font-size: inherit !important;
+    color: inherit !important;
+}
+
+body.user-dashboard .menu-title {
+    font-size: 1.1rem !important;
+    font-weight: 600 !important;
+    margin: 0.5rem 0 !important;
+    color: var(--primary-color) !important;
+}
+
+body.user-dashboard .menu-description {
+    color: #666 !important;
+    margin: 0 !important;
+    font-size: 0.85rem !important;
+}
+
+/* Button Styling */
+body.user-dashboard .btn-primary {
+    background-color: rgba(255,255,255,0.1) !important;
+    border: none !important;
+    color: white !important;
+    padding: 0.5rem 1rem !important;
+    transition: background-color 0.3s ease !important;
+}
+
+body.user-dashboard .btn-primary:hover {
+    background-color: rgba(255,255,255,0.2) !important;
+    border: none !important;
+    color: white !important;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 992px) {
+    body.user-dashboard .menu-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body.user-dashboard .navbar {
+        padding: 0.75rem 0 !important;
+    }
+    
+    body.user-dashboard .navbar-brand {
+        font-size: 1.25rem !important;
+    }
+    
+    body.user-dashboard .dashboard-card {
+        padding: 1.25rem !important;
+    }
+    
+    body.user-dashboard .dashboard-title {
+        font-size: 1.5rem !important;
+    }
+    
+    body.user-dashboard .menu-grid {
+        grid-template-columns: 1fr !important;
+        gap: 1rem !important;
+    }
+    
+    body.user-dashboard .menu-item {
+        padding: 1.25rem !important;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    body.user-dashboard .dashboard-container {
+        padding: 0 0.75rem !important;
+    }
+    
+    body.user-dashboard .dashboard-card {
+        padding: 1rem !important;
+        margin-bottom: 1.5rem !important;
+    }
+    
+    body.user-dashboard .dashboard-title {
+        font-size: 1.25rem !important;
+    }
+    
+    body.user-dashboard .menu-item {
+        padding: 1rem !important;
+    }
+    
+    body.user-dashboard .menu-icon {
+        font-size: 1.75rem !important;
+    }
+    
+    body.user-dashboard .menu-title {
+        font-size: 1rem !important;
+    }
+    
+    body.user-dashboard .menu-description {
+        font-size: 0.8rem !important;
+    }
+} 
